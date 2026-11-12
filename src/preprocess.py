@@ -45,7 +45,13 @@ REFERENCE_YEAR = 2021
 UNKNOWN_TOKEN = "__unknown__"
 
 # The raw columns "4g" and "5g" start with a digit, so we rename them.
-COLUMN_RENAMES = {"4g": "four_g", "5g": "five_g"}
+COLUMN_RENAMES = {
+    "4g": "four_g",
+    "5g": "five_g",
+    "rear_camera_mp":  "main_camera_mp",
+    "front_camera_mp": "selfie_camera_mp",
+    "internal_memory": "int_memory",
+}
 
 CATEGORICAL_COLUMNS = ["device_brand", "os", "four_g", "five_g"]
 NUMERIC_COLUMNS = [
